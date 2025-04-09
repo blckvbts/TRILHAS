@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --fonte-primaria: "Poppins", sans-serif;
+    --fonte-secundaria:  "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-primaria);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("tecnologia.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+}
+
+.container h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid  rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    outline: none;
+    font-size: 1rem;
+    color: #FFFFFF;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #FFFFFF;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    font-size: 1.25rem;
+    top: 25%;
+    
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label {
+    accent-color: #FFFFFF;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #292524;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .10);
+    margin-top: 20px;
+}
+
+.login:hover {
+    background-color: transparent;
+    border: 2px solid  rgba(255, 255, 255, .2);
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.register-link {
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.mensagem-sucesso {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    background-color: #2135A6;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    z-index: 9999;
+  }
+  
+  .mensagem-sucesso.mostrar {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+  
+
